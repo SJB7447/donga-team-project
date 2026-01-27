@@ -1,0 +1,8 @@
+{
+  "name": "Professional Team Workflow & AI Manager",
+  "description": "A comprehensive project management tool with AI-powered progress tracking, professional reporting, Gantt chart scheduling, and requirement management.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
