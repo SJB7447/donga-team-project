@@ -3,10 +3,10 @@ import { GoogleGenAI, Type } from "@google/genai";
 import { AIProgressResult } from "../types";
 
 // Note: In this environment, process.env.API_KEY is injected automatically.
-const API_KEY = process.env.API_KEY || "AIzaSyD6exqgxRty6EUX0qgfJoMhNHxzDZ7kAM0";
+// Hardcoded fallbacks are removed for security and compliance.
 
 export const getGeminiClient = () => {
-  return new GoogleGenAI({ apiKey: API_KEY });
+  return new GoogleGenAI({ apiKey: process.env.API_KEY });
 };
 
 export async function calculateTaskProgress(
